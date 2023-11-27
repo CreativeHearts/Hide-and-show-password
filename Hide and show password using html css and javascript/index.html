@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fontsstles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&family=IM+Fell+English+SC&family=Inter:wght@400;500;700&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;800&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hide/Show password</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="logo name s.png" alt="" />
+      <h2>Creative <span>Heart</span></h2>
+    </div>
+    <div class="input-container">
+      <input type="password" placeholder="Creative Heart" id="password" />
+      <i class="lnr lnr-cross" id="eye-icon"></i>
+    </div>
+
+    <script>
+      let eyeIcon = document.getElementById("eye-icon");
+      let password = document.getElementById("password");
+
+      eyeIcon.addEventListener("click", function () {
+        if (password.type == "password") {
+          password.type = "text";
+          eyeIcon.classList = "lnr lnr-eye";
+        } else {
+          password.type = "password";
+          eyeIcon.classList = "lnr lnr-cross";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #4682a9;
+}
+
+.input-container {
+  background: #fff;
+  width: 90%;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 20rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+.input-container i {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 3rem;
+  margin-inline: 4rem;
+  font-size: 2rem;
+}
+
+span {
+  color: crimson;
+}
+
+img {
+  width: 5%;
+}
